@@ -1,6 +1,17 @@
+.body{
+    
+    /*background-image:url("/img/ballena.png");*/
+    background-size: contain;
+    
+}
 
-
+.carousel-inner{
+margin: 5px;
+padding: 60px ;
+}
 .card{
 
     margin: 0 auto; /*centrar*/
+
+        
 }
