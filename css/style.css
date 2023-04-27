@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.card{
+    transition: all 0.2s;
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card .banner{
+    background-color: rgb(200, 64, 64);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card .banner p{
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card .card-body p{
+ 
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header nav a{
+    font-family: "Comic Sans MS";
+}

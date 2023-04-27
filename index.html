@@ -5,53 +5,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/popcorn.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Peliculas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>FilmStars</title>
 </head>
 
 <body>
+    <div>
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-dark bg-dark justify-content-between p-3">
+                <a class="navbar-brand " href="/index.html">
+                    <img src="img/popcorn.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+                    FilmStars
+                </a>
+                <form class="d-flex">
 
-    <h4>✅ Filtros basico, buscador</h4>
-    <h4>✅ Lista de peliculas</h4>
-    <h4>✅ estrellas peliculas puntaje</h4>
-    <h4>✅ Clic en pelicula y mostrar detalle en otra vista</h4>
-    <h4>✅ Footer</h4>
-    <h4>✅ Manejar data desde archivo txt</h4>
+                    <!-- Dropdown Filters -->
+                    <div class="dropdown ms-5 me-4 ">
+                        <select name="select" class="btn btn-secondary dropdown-toggle fw-bold" type="button"
+                            id="dropdownMenuButton2" onchange="ShowSelected();">
+                            <option value="value0" selected>Filtros</option>
+                            <option value="a-z">A - Z</option>
+                            <option value="antiguas">Mas antiguas</option>
+                            <option value="recientes">Mas recientes</option>
+                            <option value="puntaje">Más popular</option>
+                        </select>
+                    </div>
 
+                    <!-- Search -->
+                    <input class="form-control me-2 mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                        id="box-search">
+                    <button class="btn btn-outline-success pmy-2 my-sm-0" type="submit"
+                        id="button-search">Search</button>
+                </form>
+            </nav>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark justify-content-between">
-        <a class="navbar-brand" href="/index.html">Navbar</a>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="box-search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="button-search">Search</button>
-        </form>
-    </nav>
-
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <!-- Dropdown Filters -->
-    <div class="dropdown">
-        <select name="select" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
-            onchange="ShowSelected();">
-            <option value="value0" selected>Filtros</option>
-            <option value="a-z">A - Z</option>
-            <option value="antiguas">Mas antiguas</option>
-            <option value="recientes">Mas recientes</option>
-            <option value="puntaje">Puntuación</option>
-        </select>
+        </header>
     </div>
 
-    <br>
-    <br>
-
     <!-- Movie Catalog -->
+
     <div class="row row-cols-1 row-cols-md-3 g-4" id="movie-catalog"></div>
+
+    <footer class="text-center text-white" style="background-color: #F1F1F1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark">
+                    <i class="fab fa-facebook-f"></i>
+                    <img src="img/iconos-footer/facebook.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark">
+                    <i class="fab fa-twitter"></i>
+                    <img src="img/iconos-footer/twitter.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+                </a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark">
+                    <i class="fab fa-google"></i>
+                    <img src="img/iconos-footer/google.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark">
+                    <i class="fab fa-instagram"></i>
+                    <img src="img/iconos-footer/instagram.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+                </a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/santiagoadm/" target="_blank" role="button"
+                    data-mdb-ripple-color="dark">
+                    <i class="fab fa-linkedin"></i>
+                    <img src="img/iconos-footer/linkedin.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+                </a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/MCamilaM/u-cartelera-peliculas" target="_blank" role="button"
+                    data-mdb-ripple-color="dark">
+                    <i class="fab fa-github"></i>
+                    <img src="img/iconos-footer/github.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
+                </a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark" href="#">FilmStars</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
 
 
     <!-- custom script JavaScript --------------------------------------------------------------------------------->

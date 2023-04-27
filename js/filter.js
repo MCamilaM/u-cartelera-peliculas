@@ -4,6 +4,10 @@ function ShowSelected() {
     console.log("cod" + cod);
 
     switch (cod) {
+        case "value0":
+            console.log(cod);
+            showMovies(getMovies())
+            break;
         case "recientes":
             console.log(cod);
             mostRecentFilter()
@@ -34,15 +38,18 @@ function ShowSelected() {
 function getMovies() {
 
     const movies = [
-        { id: 1, name: 'Ballena', year: 2018, category: ['drama', ' terror'], score: '1.0', image: 'img/ballena.png' },
-        { id: 1, name: 'super man', year: 2023, category: ['drama', 'otra'], score: '8.0', image: 'img/ballena.png' },
-        { id: 1, name: 'hormiga', year: 2017, category: ['drama', 'otra'], score: '2.0', image: 'img/ballena.png' },
-        { id: 1, name: 'Zallena', year: 2021, category: ['drama', 'otra'], score: '8.0', image: 'img/ballena.png' },
-        { id: 1, name: 'gallena', year: 2023, category: ['drama', 'otra'], score: '3.0', image: 'img/ballena.png' },
-        { id: 1, name: 'yallena', year: 2019, category: ['drama', 'otra'], score: '9.0', image: 'img/ballena.png' },
-        { id: 1, name: 'wallena', year: 2022, category: ['drama', 'otra'], score: '8.0', image: 'img/ballena.png' },
-        { id: 1, name: 'lallena', year: 2023, category: ['drama', 'otra'], score: '5.0', image: 'img/ballena.png' }
+        { id: 1, name: 'Ballena', year: 2018, category: ['drama', ' terror'], score: 1.0, duration:'2h 50min', image: 'img/movie1/ballena.png', sipnosis: 'Billy Batson and his foster siblings, who transform into superheroes by saying "Shazam!", are forced to get back into action and fight the Daughters of Atlas, who they must stop from using a weapon that could destroy the world.' },
+        { id: 2, name: 'Posesión infernal El despertar', year: 2023, category: ['Terror'], score: '7.3', duration:'1h 37min', image: 'img/movie2/movie2.jpg', sipnosis: 'Beth visita a su hermana mayor, Ella, que está criando a 3 niños en un pequeño apartamento en Los Ángeles. Su reunión es muy corta cuando encuentran un libro demoníaco, The Necronomicon Ex-Mortis.' },
+        { id: 3, name: 'hormiga', year: 2017, category: ['drama', 'otra'], score: 2.0, duration:'2h 50min', image: 'img/movie3/mario.jpg', sipnosis: 'Billy Batson and his foster siblings, who transform into superheroes' },
+        { id: 4, name: 'Ballena', year: 2021, category: ['drama', 'otra'], score: 8.0, duration:'2h 50min', image: 'img/movie4/john-wick.jpg', sipnosis: 'Billy Batson and his foster siblings, who transform into superheroes' },
+        { id: 5, name: 'Ballena', year: 2023, category: ['drama', 'otra'], score: 3.0, duration:'2h 50min', image: 'img/movie5/avatar.jpg', sipnosis: 'Billy Batson and his foster siblings, who transform into superheroes' },
+        { id: 6, name: 'Ballena', year: 2019, category: ['drama', 'otra'], score: 9.0, duration:'2h 50min', image: 'img/movie6/sin-novedad-frente.jpg', sipnosis: 'Billy Batson and his foster siblings, who transform into superheroes' },
+        { id: 7, name: 'Ballena', year: 2022, category: ['drama', 'otra'], score: 8.0, duration:'2h 50min', image: 'img/movie7/cadena-perpetua.jpg', sipnosis: 'Billy Batson and his foster siblings, who transform into superheroes' },
+        { id: 8, name: 'Ballena', year: 2023, category: ['drama', 'otra'], score: 5.0, duration:'2h 50min', image: 'img/movie8/harry-potter.jpg', sipnosis: 'Billy Batson and his foster siblings, who transform into superheroes' },
+        { id: 9, name: 'Ballena', year: 2022, category: ['drama', 'otra'], score: 8.0, duration:'2h 50min', image: 'img/movie9/insidious.jpg', sipnosis: 'Billy Batson and his foster siblings, who transform into superheroes' },
+        { id: 10, name: 'Ballena', year: 2023, category: ['drama', 'otra'], score: 5.0, duration:'2h 50min', image: 'img/movie10/garfield.jpg', sipnosis: 'Billy Batson and his foster siblings, who transform into superheroes' }
     ]
+    
 
     return movies
 }
@@ -55,20 +62,24 @@ function showMovies(movies) {
         // altGr + } (dos veces) para hacer backticks
         resultSearch.innerHTML += `
  
-                <div class="card" style="width: 18rem;">
-                    <img src="${movie.image}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">${movie.name}</h5>
-                        <p class="card-text" style="font-size:30px">Calificación: ${movie.score}</p>
-                        <p class="card-text" style="font-size:30px">Lanzamiento: ${movie.year}</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">${movie.category}</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Ver detalle</a>
-                    </div>
-                </div>
+        <div class="card m-5 shadow p-3 mb-5 bg-white rounded mask flex-center " style="width: 23rem;">
+        <div class="banner d-flex">
+            <img src="img/popcorn.png" class="imagen-banner" width="45" alt="...">
+            <p class="card-title">FilmStart</p>
+        </div>
+        <img src="${movie.image}" class="card-img-top hover-zoom" alt="...">
+        <div class="card-body">
+            <h5 class="card-title" style="font-weight:bold">${movie.name}</h5>
+            <p class="card-text">⭐Calificación: ${movie.score}</p>
+            <p class="card-text" >📽Estreno: ${movie.year}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><span style="font-weight:bold">Categoria:</span> ${movie.category}</li>
+        </ul>
+        <div class="card-body">
+            <a href="/movie.html" class="card-link"><button type="button" class="btn btn-outline-danger">Ver detalle</button></a>
+        </div>
+    </div>
             `
 
     }
@@ -116,7 +127,7 @@ function scoreFilter() {
     showMovies(movies)
 }
 
-function alphabeticalOrderFilter(){
+function alphabeticalOrderFilter() {
 
     const movies = getMovies()
 

@@ -12,6 +12,11 @@ padding: 60px ;
 .card{
 
     margin: 0 auto; /*centrar*/
-
-        
+  
 }
+
+.card:hover{
+    transform: scale(1.15);
+}
+
+
