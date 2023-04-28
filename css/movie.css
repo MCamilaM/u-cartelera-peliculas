@@ -1,8 +1,5 @@
-.body{
-    
-    /*background-image:url("/img/ballena.png");*/
+.body{  
     background-size: contain;
-    
 }
 
 .carousel-inner{
@@ -10,13 +7,29 @@ margin: 5px;
 padding: 60px ;
 }
 .card{
-
     margin: 0 auto; /*centrar*/
-  
 }
 
-.card:hover{
-    transform: scale(1.15);
+header nav a{
+    font-family: "Comic Sans MS";
 }
 
+.carousel .carousel-inner .carousel-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family: "Comic Sans MS";
+}
+.card-body{
+    margin-left: 20px;
+}
+.card-body h5{
+    font-size: 50px;
+    font-family: "Comic Sans MS";
+}
 
+.card-body p{
+    font-size: 22px;
+}
