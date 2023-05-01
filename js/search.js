@@ -52,3 +52,4 @@ const filter = () => {
 boxSearch.addEventListener('keyup', filter)
 
 filter()
+
