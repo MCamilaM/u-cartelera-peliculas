@@ -1,8 +1,0 @@
-{ id: 1, name: 'Ballena', year: 2023, category: ['drama', ' terror'], score: '8.0', image: 'img/ballena.png' },
-{ id: 1, name: 'super man', year: 2023, category: ['drama', 'otra'], score: '8.0', image: 'img/ballena.png' },
-{ id: 1, name: 'hormiga', year: 2023, category: ['drama', 'otra'], score: '8.0', image: 'img/ballena.png' },
-{ id: 1, name: 'Ballena', year: 2021, category: ['drama', 'otra'], score: '8.0', image: 'img/ballena.png' },
-{ id: 1, name: 'Ballena', year: 2023, category: ['drama', 'otra'], score: '8.0', image: 'img/ballena.png' },
-{ id: 1, name: 'Ballena', year: 2019, category: ['drama', 'otra'], score: '8.0', image: 'img/ballena.png' },
-{ id: 1, name: 'Ballena', year: 2022, category: ['drama', 'otra'], score: '8.0', image: 'img/ballena.png' },
-{ id: 1, name: 'Ballena', year: 2023, category: ['drama', 'otra'], score: '8.0', image: 'img/ballena.png' }
