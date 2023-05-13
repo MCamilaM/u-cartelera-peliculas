@@ -1,0 +1,59 @@
+// Variables sass
+$font-family-comic: "Comic Sans MS";
+$displey-flex: flex;
+$align-center: center;
+$color-aliceblue: rgb(240, 248, 255);
+$box-sizing-box: border-box;
+
+body {
+  background-color: rgb(255, 255, 255);
+  background-size: contain;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+// Anidación selectores
+.card {
+  transition: all 0.2s;
+  margin: 0 auto;
+
+  .banner {
+    background-color: rgb(200, 64, 64);
+    display: $displey-flex;
+    color: $color-aliceblue;
+    justify-content: $align-center;
+    p {
+      font-family: $font-family-comic;
+      display: $displey-flex;
+      font-size: 20px;
+      color: $color-aliceblue;
+      justify-content: $align-center;
+      align-items: $align-center;
+    }
+  }
+  .card-body p {
+    display: $displey-flex;
+    font-size: 18px;
+    display: $displey-flex;
+    justify-content: $align-center;
+    align-items: $align-center;
+  }
+}
+
+header nav a {
+  font-family: $font-family-comic;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: $box-sizing-box;
+  font-family: sans-serif;
+}
+
+.carousel-inner {
+  margin: 5px;
+  padding: 60px;
+}

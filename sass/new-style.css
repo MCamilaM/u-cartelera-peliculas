@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(255, 255, 255);
+  background-size: contain;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  transition: all 0.2s;
+  margin: 0 auto;
+}
+.card .banner {
+  background-color: rgb(200, 64, 64);
+  display: flex;
+  color: rgb(240, 248, 255);
+  justify-content: center;
+}
+.card .banner p {
+  font-family: "Comic Sans MS";
+  display: flex;
+  font-size: 20px;
+  color: rgb(240, 248, 255);
+  justify-content: center;
+  align-items: center;
+}
+.card .card-body p {
+  display: flex;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a {
+  font-family: "Comic Sans MS";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.carousel-inner {
+  margin: 5px;
+  padding: 60px;
+}/*# sourceMappingURL=new-style.css.map */
