@@ -28,7 +28,7 @@ const filter = () => {
                 <div class="card m-5 shadow p-3 mb-5 bg-white rounded mask flex-center " style="width: 23rem;">
                     <div class="banner d-flex">
                         <img src="img/popcorn.png" class="imagen-banner" width="45" alt="...">
-                        <p class="card-title">FilmStart</p>
+                        <p class="card-title">FilmStars</p>
                     </div>
                     <img src="${movie.image}" class="card-img-top hover-zoom" alt="...">
                     <div class="card-body">
